@@ -54,24 +54,24 @@ Paper and ink refills available at Amazon and MediaMarkt.
 | Component | Details |
 |-----------|---------|
 | **OS** | Raspberry Pi OS |
-| **Web interface** | Flask (Python) — served locally |
-| **Payment** | Mollie API — POST request, QR code generation, webhook + HTTPS polling every 2s |
-| **Camera control** | gPhoto2 — USB trigger, live preview, file retrieval |
-| **Printing** | CUPS + Selphy driver — standard Linux print manager |
-| **Image filters** | Pillow — custom filters + room-specific overlays |
+| **Web interface** | Flask (Python) served locally |
+| **Payment** | Mollie API POST request, QR code generation, webhook + HTTPS polling every 2s |
+| **Camera control** | gPhoto2 USB trigger, live preview, file retrieval |
+| **Printing** | CUPS + Selphy driver standard Linux print manager |
+| **Image filters** | Pillow custom filters + room-specific overlays |
 | **Inter-component communication** | HTTP polling every Xms with JSON |
-| **Boot management** | systemd / crontab — auto-start on boot |
+| **Boot management** | systemd / crontab auto-start on boot |
 
 ---
 
 ## Flask UI Flow
 
-1. **Home screen** — button + price display
-2. **Payment screen** — QR code + amount
-3. **Filter selection** — filter menu + live preview
-4. **Countdown** — 5 second timer before capture
-5. **Preview** — filtered photo preview before printing
-6. **Confirmation screen** — print confirmation
+1. **Home screen** : button + price display
+2. **Payment screen** : QR code + amount
+3. **Filter selection** : filter menu + live preview
+4. **Countdown** : 5 second timer before capture
+5. **Preview** : filtered photo preview before printing
+6. **Confirmation screen** : print confirmation
 
 ---
 
